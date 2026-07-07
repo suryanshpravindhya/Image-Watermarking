@@ -1,0 +1,20 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm watermark_tb.clk watermark_tb.i watermark_tb.input_file watermark_tb.output_file watermark_tb.pixel_in watermark_tb.pixel_out watermark_tb.rst watermark_tb.status watermark_tb.valid_in watermark_tb.valid_out
+Created probe 1
+ncsim> run
+Starting Watermarking Process...
+Processing Complete. Closing files.
+Simulation complete via $finish(1) at time 656420 NS + 0
+./tb.v:76         $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 296.9M data = 335.5M total (339.1M Peak)
+ncsim: CPU Usage - 0.4s system + 0.1s user = 0.5s total (91.9s, 0.6% cpu)
